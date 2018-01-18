@@ -7,6 +7,7 @@
 """
 
 class Data():
+    # 第一
     def __init__(self):
         self._new_data = []
 
