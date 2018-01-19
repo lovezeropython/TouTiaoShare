@@ -5,7 +5,7 @@
 @Author: songhao
 @微信公众号: zeropython
 @File: superclass.py
-@website: https://www.168seo.cn/python/24344.html
+@website:https://www.168seo.cn/python/24344.html
 """
 # See: http://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import codecs
@@ -33,7 +33,7 @@ twisted.enterprise.adbapi为此产生，它是DB-API 2.0 API的非阻塞接口�
 
 
 class JsonWithEncodingPipeline(object):
-    #自定义json文件的导出
+    # 自定义json文件的导出
     def __init__(self):
         # 打开文件
         self.file = codecs.open('article.json', 'w', encoding="utf-8")
@@ -51,11 +51,12 @@ class JsonWithEncodingPipeline(object):
 
 
 class MysqlPipeline(object):
-    #采用同步的机制写入mysql
+    # 采用同步的机制写入mysql
     def __init__(self):
         self.conn = pymysql.connect('192.168.0.106', 'root', 'root', 'article', charset="utf8", use_unicode=True)
-    # 链接MySQL 数据库
+        # 链接MySQL 数据库
         self.cursor = self.conn.cursor()
+
     # 获取MySQL 数据库指针
     def process_item(self, item, spider):
         insert_sql = """
@@ -63,25 +64,27 @@ class MysqlPipeline(object):
             VALUES (%s, %s, %s, %s)
         """
         self.cursor.execute(insert_sql, (item["title"], item["url"], item["create_date"], item["fav_nums"]))
-    # 执行 导入数据
+        # 执行 导入数据
         self.conn.commit()
     # 提交数据
+
 
 class MysqlTwistedPipline(object):
     """
     异步存储数据
     非阻塞型
     """
+
     def __init__(self, dbpool):
         self.dbpool = dbpool
 
     @classmethod
     def from_settings(cls, settings):
         dbparms = dict(
-            host = settings["MYSQL_HOST"],
-            db = settings["MYSQL_DBNAME"],
-            user = settings["MYSQL_USER"],
-            passwd = settings["MYSQL_PASSWORD"],
+            host=settings["MYSQL_HOST"],
+            db=settings["MYSQL_DBNAME"],
+            user=settings["MYSQL_USER"],
+            passwd=settings["MYSQL_PASSWORD"],
             charset='utf8',
             cursorclass=pymysql.cursors.DictCursor,
             use_unicode=True,
@@ -91,34 +94,36 @@ class MysqlTwistedPipline(object):
         return cls(dbpool)
 
     def process_item(self, item, spider):
-        #使用twisted将mysql插入变成异步执行
+        # 使用twisted将mysql插入变成异步执行
         query = self.dbpool.runInteraction(self.do_insert, item)
-        query.addErrback(self.handle_error, item, spider) #处理异常
+        query.addErrback(self.handle_error, item, spider)  # 处理异常
 
     def handle_error(self, failure, item, spider):
         # 处理异步插入的异常
-        print (failure)
+        print(failure)
 
     def do_insert(self, cursor, item):
-        #执行具体的插入
-        #根据不同的item 构建不同的sql语句并插入到mysql中
+        # 执行具体的插入
+        # 根据不同的item 构建不同的sql语句并插入到mysql中
         insert_sql, params = item.get_insert_sql()
-        print (insert_sql, params)
+        print(insert_sql, params)
         cursor.execute(insert_sql, params)
 
 
 class JsonExporterPipleline(object):
-    #调用scrapy提供的json export导出json文件
+    # 调用scrapy提供的json export导出json文件
     def __init__(self):
         self.file = open('articleexport.json', 'wb')
         self.exporter = JsonItemExporter(self.file, encoding="utf-8", ensure_ascii=False)
-    # 打开文件
+        # 打开文件
         self.exporter.start_exporting()
+
     # 导出文件
 
     def close_spider(self, spider):
         self.exporter.finish_exporting()
         self.file.close()
+
     #  文件关闭
 
     def process_item(self, item, spider):
@@ -129,6 +134,7 @@ class JsonExporterPipleline(object):
 class MongoPipeline(object):
     # mongodb 数据库存储
     collection_name = 'scrapy_items'
+
     # 数据库名称
     def __init__(self, mongo_uri, mongo_db):
         self.mongo_uri = mongo_uri
