@@ -40,6 +40,7 @@ class B(A):
     def get_x_y(self):
         print(self.x ,self.y)
 
+
 """
 
 class Proxy:
