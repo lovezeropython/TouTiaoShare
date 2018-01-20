@@ -74,7 +74,6 @@ class MysqlTwistedPipline(object):
     异步存储数据
     非阻塞型
     """
-
     def __init__(self, dbpool):
         self.dbpool = dbpool
 
@@ -90,18 +89,14 @@ class MysqlTwistedPipline(object):
             use_unicode=True,
         )
         dbpool = adbapi.ConnectionPool("MySQLdb", **dbparms)
-
         return cls(dbpool)
-
     def process_item(self, item, spider):
         # 使用twisted将mysql插入变成异步执行
         query = self.dbpool.runInteraction(self.do_insert, item)
         query.addErrback(self.handle_error, item, spider)  # 处理异常
-
     def handle_error(self, failure, item, spider):
         # 处理异步插入的异常
         print(failure)
-
     def do_insert(self, cursor, item):
         # 执行具体的插入
         # 根据不同的item 构建不同的sql语句并插入到mysql中
@@ -134,12 +129,10 @@ class JsonExporterPipleline(object):
 class MongoPipeline(object):
     # mongodb 数据库存储
     collection_name = 'scrapy_items'
-
     # 数据库名称
     def __init__(self, mongo_uri, mongo_db):
         self.mongo_uri = mongo_uri
         self.mongo_db = mongo_db
-
     @classmethod
     def from_crawler(cls, crawler):
         # 从settings 获取 MONGO_URI，MONGO_DATABASE
@@ -147,16 +140,13 @@ class MongoPipeline(object):
             mongo_uri=crawler.settings.get('MONGO_URI'),
             mongo_db=crawler.settings.get('MONGO_DATABASE', 'items')
         )
-
     def open_spider(self, spider):
         # 数据库打开配置
         self.client = pymongo.MongoClient(self.mongo_uri)
         self.db = self.client[self.mongo_db]
-
     def close_spider(self, spider):
         # 数据库关闭
         self.client.close()
-
     def process_item(self, item, spider):
         # 数据库储存
         self.db[self.collection_name].insert_one(dict(item))
