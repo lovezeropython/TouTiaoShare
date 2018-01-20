@@ -4,6 +4,7 @@
 @Author: songhao
 @微信公众号: zeropython
 @File: jincheng.py
+@website: https://www.168seo.cn/python/24346.html
 """
 """
 # 第一种方式：使用os模块中的fork方式实现多进程
