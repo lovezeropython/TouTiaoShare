@@ -4,6 +4,7 @@
 @Author: songhao
 @微信公众号: zeropython
 @File: c1.py
+@website: www.168seo.cn
 """
 import os
 from urllib.request import urlopen
