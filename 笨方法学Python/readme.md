@@ -4,4 +4,4 @@
 
 
 
-![](./weinxin.jpg)
+![](https://github.com/lovezeropython/TouTiaoShare/blob/master/%E7%AC%A8%E6%96%B9%E6%B3%95%E5%AD%A6Python/weixin.jpg)
