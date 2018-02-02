@@ -1,0 +1,59 @@
+{'titles_terms': 'python教程', 'new_time': '2018-02-02', 'description': '生活中的视频，学习的心得', 'source_url': 'http://www.toutiao.com/c/user/74587259364/', 'follow_count': 6469, 'fensi': 6469}
+{'titles_terms': 'python全栈', 'new_time': '2018-02-02', 'description': '《python全栈开发实战》作者', 'source_url': 'http://www.toutiao.com/c/user/64317177145/', 'follow_count': 6308, 'fensi': 6308}
+{'titles_terms': 'python语言', 'new_time': '2018-02-02', 'description': 'python是一种面向对象，直译式计算机程序设计语言。', 'source_url': 'http://www.toutiao.com/c/user/60739488617/', 'follow_count': 7290, 'fensi': 7290}
+{'titles_terms': '我用python', 'new_time': '2018-02-02', 'description': '人生苦短，我用Python', 'source_url': 'http://www.toutiao.com/c/user/61121618971/', 'follow_count': 5131, 'fensi': 5131}
+{'titles_terms': 'python社区', 'new_time': '2018-02-02', 'description': '专注于python每周不定时更新python相关的原创文章', 'source_url': 'http://www.toutiao.com/c/user/52105831476/', 'follow_count': 6404, 'fensi': 6404}
+{'titles_terms': 'python时代', 'new_time': '2018-02-02', 'description': 'Python就是这么简单好玩！你也可以会编程！', 'source_url': 'http://www.toutiao.com/c/user/6949449343/', 'follow_count': 5315, 'fensi': 5315}
+{'titles_terms': 'python乐园', 'new_time': '2018-02-02', 'description': '分享一些软件或者编程的知识。', 'source_url': 'http://www.toutiao.com/c/user/70393526564/', 'follow_count': 3969, 'fensi': 3969}
+{'titles_terms': '难得python', 'new_time': '2018-02-02', 'description': '和爱好Python的人一起分享学习过程', 'source_url': 'http://www.toutiao.com/c/user/5410880280/', 'follow_count': 4557, 'fensi': 4557}
+{'titles_terms': 'python公开课', 'new_time': '2018-02-02', 'description': 'Python是一门杰出的编程语言，一起学习Python吧！', 'source_url': 'http://www.toutiao.com/c/user/55299445325/', 'follow_count': 3031, 'fensi': 3031}
+{'titles_terms': 'python与设计', 'new_time': '2018-02-02', 'description': 'python初学者，设计小学生。', 'source_url': 'http://www.toutiao.com/c/user/5418417308/', 'follow_count': 2693, 'fensi': 2693}
+{'titles_terms': 'python学习交流', 'new_time': '2018-02-02', 'description': '寻找一起学习python的朋友。', 'source_url': 'http://www.toutiao.com/c/user/59972387297/', 'follow_count': 2448, 'fensi': 2448}
+{'titles_terms': '我的python之路', 'new_time': '2018-02-02', 'description': '分享一些编程的经验 希望能帮助到广大程序员同胞们', 'source_url': 'http://www.toutiao.com/c/user/5885567993/', 'follow_count': 2045, 'fensi': 2045}
+{'titles_terms': 'python学习', 'new_time': '2018-02-02', 'description': '爱好Python开发，热于分享Python文章。', 'source_url': 'http://www.toutiao.com/c/user/64978161846/', 'follow_count': 3027, 'fensi': 3027}
+{'titles_terms': 'python苦短', 'new_time': '2018-02-02', 'description': '人生苦短，我用python', 'source_url': 'http://www.toutiao.com/c/user/68322047228/', 'follow_count': 2782, 'fensi': 2782}
+{'titles_terms': '趣味python', 'new_time': '2018-02-02', 'description': '主要分享趣味视频，脑经急转弯的题以及相应用编程实现的方法。', 'source_url': 'http://www.toutiao.com/c/user/6809213464/', 'follow_count': 3344, 'fensi': 3344}
+{'titles_terms': 'python小白', 'new_time': '2018-02-02', 'description': 'Python金融信息覆盖，Python与生活', 'source_url': 'http://www.toutiao.com/c/user/4479594808/', 'follow_count': 2965, 'fensi': 2965}
+{'titles_terms': 'python', 'new_time': '2018-02-02', 'description': '改变并不一定意味着成功，但成功一定伴随着生活的改变。', 'source_url': 'http://www.toutiao.com/c/user/60431252821/', 'follow_count': 4489, 'fensi': 4489}
+{'titles_terms': '爱python', 'new_time': '2018-02-02', 'description': '传播最新资讯，分享学习方法，提供学习资源', 'source_url': 'http://www.toutiao.com/c/user/6111838185/', 'follow_count': 2588, 'fensi': 2588}
+{'titles_terms': 'python程序员', 'new_time': '2018-02-02', 'description': 'Life is short, You need Python', 'source_url': 'http://www.toutiao.com/c/user/63823430206/', 'follow_count': 2504, 'fensi': 2504}
+{'titles_terms': 'python大师兄', 'new_time': '2018-02-02', 'description': '专注编程领域实用小技巧', 'source_url': 'http://www.toutiao.com/c/user/59277441884/', 'follow_count': 1813, 'fensi': 1813}
+{'titles_terms': '有用的python', 'new_time': '2018-02-02', 'description': '提供比较有用的python代码，避免出现编程语言“假空大”。', 'source_url': 'http://www.toutiao.com/c/user/53576963516/', 'follow_count': 1488, 'fensi': 1488}
+{'titles_terms': '跟我学python', 'new_time': '2018-02-02', 'description': '专注人工智能，Python开发', 'source_url': 'http://www.toutiao.com/c/user/6586405761/', 'follow_count': 2393, 'fensi': 2393}
+{'titles_terms': 'python北北', 'new_time': '2018-02-02', 'description': 'python从零基础到web网站开发运维自动化大数据挖掘分析', 'source_url': 'http://www.toutiao.com/c/user/58720904207/', 'follow_count': 2306, 'fensi': 2306}
+{'titles_terms': 'python蔷薇', 'new_time': '2018-02-02', 'description': 'IT界的技术流，分享干货', 'source_url': 'http://www.toutiao.com/c/user/62525900831/', 'follow_count': 2587, 'fensi': 2587}
+{'titles_terms': 'python纸鸢', 'new_time': '2018-02-02', 'description': 'Python编程，技术分享', 'source_url': 'http://www.toutiao.com/c/user/69221603820/', 'follow_count': 2067, 'fensi': 2067}
+{'titles_terms': 'pythone站', 'new_time': '2018-02-02', 'description': 'python 相关的技术学习及最新资讯', 'source_url': 'http://www.toutiao.com/c/user/4406598235/', 'follow_count': 2163, 'fensi': 2163}
+{'titles_terms': '吾爱python', 'new_time': '2018-02-02', 'description': 'Life is short, you need Python', 'source_url': 'http://www.toutiao.com/c/user/7007422277/', 'follow_count': 1699, 'fensi': 1699}
+{'titles_terms': 'python小哥', 'new_time': '2018-02-02', 'description': '主要介绍开发网站相关技术\n关注最新网络组建的技术', 'source_url': 'http://www.toutiao.com/c/user/2836134502/', 'follow_count': 2572, 'fensi': 2572}
+{'titles_terms': 'python零基础开发', 'new_time': '2018-02-02', 'description': 'Python开发总结核心知识点以及练习题（含答案）的理解', 'source_url': 'http://www.toutiao.com/c/user/61042120395/', 'follow_count': 4951, 'fensi': 4951}
+{'titles_terms': '糖宝python', 'new_time': '2018-02-02', 'description': '投资自己的大脑，人生才不会原地踏步。努力就会有收获!', 'source_url': 'http://www.toutiao.com/c/user/59648555215/', 'follow_count': 4722, 'fensi': 4722}
+{'titles_terms': 'python学习历程', 'new_time': '2018-02-02', 'description': '官方文档《The Python Tutorial》中文翻译。', 'source_url': 'http://www.toutiao.com/c/user/63228156796/', 'follow_count': 464, 'fensi': 464}
+{'titles_terms': 'python小白社区', 'new_time': '2018-02-02', 'description': '从入门到精通，这里陪伴你从第一行到融入python的世界。', 'source_url': 'http://www.toutiao.com/c/user/4316282433/', 'follow_count': 584, 'fensi': 584}
+{'titles_terms': 'python魔力科技', 'new_time': '2018-02-02', 'description': '魔力科技！python带你一起看世界', 'source_url': 'http://www.toutiao.com/c/user/56604874956/', 'follow_count': 511, 'fensi': 511}
+{'titles_terms': 'python数据分析实例', 'new_time': '2018-02-02', 'description': 'Python+Flask+MongoDB+Pandas+Bokeh+Sklearn+Pytorch', 'source_url': 'http://www.toutiao.com/c/user/67605066329/', 'follow_count': 2754, 'fensi': 2754}
+{'titles_terms': 'python技术', 'new_time': '2018-02-02', 'description': '推广python的应用技术', 'source_url': 'http://www.toutiao.com/c/user/4582385035/', 'follow_count': 8, 'fensi': 8}
+{'titles_terms': 'python学习笔记', 'new_time': '2018-02-02', 'description': 'python自学过程中笔记', 'source_url': 'http://www.toutiao.com/c/user/83879998018/', 'follow_count': 898, 'fensi': 898}
+{'titles_terms': 'pythonstar', 'new_time': '2018-02-02', 'description': '人生苦短，我用Python！', 'source_url': 'http://www.toutiao.com/c/user/72365969022/', 'follow_count': 1374, 'fensi': 1374}
+{'titles_terms': 'python金克斯', 'new_time': '2018-02-02', 'description': '分享Python的基础教程知识。', 'source_url': 'http://www.toutiao.com/c/user/78041186906/', 'follow_count': 549, 'fensi': 549}
+{'titles_terms': '趣味玩转python', 'new_time': '2018-02-02', 'description': '闲来无聊，趣味玩转Python，希望不要笑喷！', 'source_url': 'http://www.toutiao.com/c/user/63029779532/', 'follow_count': 85, 'fensi': 85}
+{'titles_terms': 'pythoner', 'new_time': '2018-02-02', 'description': '生活中的各种视频,经历还有学习心得', 'source_url': 'http://www.toutiao.com/c/user/3927990489/', 'follow_count': 528, 'fensi': 528}
+{'titles_terms': 'python开发', 'new_time': '2018-02-02', 'description': '分享一些python web开发和爬虫的知识', 'source_url': 'http://www.toutiao.com/c/user/18193962294/', 'follow_count': 519, 'fensi': 519}
+{'titles_terms': 'python自学', 'new_time': '2018-02-02', 'description': 'python自学、python资源分享、python交流学习', 'source_url': 'http://www.toutiao.com/c/user/80187216622/', 'follow_count': 383, 'fensi': 383}
+{'titles_terms': 'python路漫漫', 'new_time': '2018-02-02', 'description': '学Python，用Python，爱Python', 'source_url': 'http://www.toutiao.com/c/user/76419007013/', 'follow_count': 818, 'fensi': 818}
+{'titles_terms': '从零学python', 'new_time': '2018-02-02', 'description': '一个人学习是枯燥的，', 'source_url': 'http://www.toutiao.com/c/user/56848646238/', 'follow_count': 751, 'fensi': 751}
+{'titles_terms': 'python与动漫', 'new_time': '2018-02-02', 'description': 'python和编程学习记录', 'source_url': 'http://www.toutiao.com/c/user/5971814597/', 'follow_count': 929, 'fensi': 929}
+{'titles_terms': '51学python', 'new_time': '2018-02-02', 'description': '最专业的 Python社区，有每日推送，免费电子书。', 'source_url': 'http://www.toutiao.com/c/user/5957121749/', 'follow_count': 734, 'fensi': 734}
+{'titles_terms': '淘气的python', 'new_time': '2018-02-02', 'description': '淘学城是以多业态的儿童教育、文化、艺术等资源聚合的教育综合体', 'source_url': 'http://www.toutiao.com/c/user/51749289372/', 'follow_count': 1202, 'fensi': 1202}
+{'titles_terms': '篮球帮主侃python', 'new_time': '2018-02-02', 'description': 'python开发相关技术，经验技巧的总结，及篮球视频。', 'source_url': 'http://www.toutiao.com/c/user/62313692865/', 'follow_count': 848, 'fensi': 848}
+{'titles_terms': '热衷python和前端', 'new_time': '2018-02-02', 'description': '发布有前端和python的文章，不要在该奋斗的年纪选择了安逸', 'source_url': 'http://www.toutiao.com/c/user/81556337131/', 'follow_count': 977, 'fensi': 977}
+{'titles_terms': '隔着雾霾看python', 'new_time': '2018-02-02', 'description': '关注python、java、c、c++等领域', 'source_url': 'http://www.toutiao.com/c/user/51056471508/', 'follow_count': 773, 'fensi': 773}
+{'titles_terms': 'python一devil', 'new_time': '2018-02-02', 'description': '创新在于不断努力去挖掘和去发现.', 'source_url': 'http://www.toutiao.com/c/user/79794282620/', 'follow_count': 2084, 'fensi': 2084}
+{'titles_terms': 'python进阶学习交流', 'new_time': '2018-02-02', 'description': '网络爬虫、数据处理、数据清洗、数据加工、数据挖掘等', 'source_url': 'http://www.toutiao.com/c/user/84375341828/', 'follow_count': 1731, 'fensi': 1731}
+{'titles_terms': '从零开始学习python', 'new_time': '2018-02-02', 'description': '一起学习Python的基础知识,从零到一的学习', 'source_url': 'http://www.toutiao.com/c/user/6438756870/', 'follow_count': 1764, 'fensi': 1764}
+{'titles_terms': 'pythoner集中营', 'new_time': '2018-02-02', 'description': '主要涉及python和数据科学，欢迎关注。', 'source_url': 'http://www.toutiao.com/c/user/71544608337/', 'follow_count': 10, 'fensi': 10}
+{'titles_terms': '大家学python', 'new_time': '2018-02-02', 'description': '学习、积累、分享、提高！', 'source_url': 'http://www.toutiao.com/c/user/4610576721/', 'follow_count': 1255, 'fensi': 1255}
+{'titles_terms': 'python兮兮', 'new_time': '2018-02-02', 'description': '致力于让更多人学会Python，学好Python', 'source_url': 'http://www.toutiao.com/c/user/80538726518/', 'follow_count': 777, 'fensi': 777}
+{'titles_terms': 'python之禅', 'new_time': '2018-02-02', 'description': 'Python之禅，分享原创 Python 技术干货 ,', 'source_url': 'http://www.toutiao.com/c/user/3380592456/', 'follow_count': 1022, 'fensi': 1022}
+{'titles_terms': 'python爱好者', 'new_time': '2018-02-02', 'description': 'Python学习分享', 'source_url': 'http://www.toutiao.com/c/user/84860541872/', 'follow_count': 10, 'fensi': 10}
+{'titles_terms': 'python资源社区', 'new_time': '2018-02-02', 'description': '针对初学者以及自学者求职需求！免费分享python学习资料！', 'source_url': 'http://www.toutiao.com/c/user/86335796851/', 'follow_count': 8, 'fensi': 8}
