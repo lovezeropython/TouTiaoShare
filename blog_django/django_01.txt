@@ -1,0 +1,389 @@
+➜  ~ cd Desktop/blog_django
+➜  blog_django django-admin startproject mysite .
+➜  blog_django tree ./
+./
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+1 directory, 5 files
+➜  blog_django charm ./
+➜  blog_django python manage.py startapp blog
+➜  blog_django tree ./
+./
+├── blog
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── __pycache__
+    │   ├── __init__.cpython-36.pyc
+    │   └── settings.cpython-36.pyc
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+
+4 directories, 14 files
+➜  blog_django django-admin
+
+Type 'django-admin help <subcommand>' for help on a specific subcommand.
+
+Available subcommands:
+
+[django]
+    check
+    compilemessages
+    createcachetable
+    dbshell
+    diffsettings
+    dumpdata
+    flush
+    inspectdb
+    loaddata
+    makemessages
+    makemigrations
+    migrate
+    runserver
+    sendtestemail
+    shell
+    showmigrations
+    sqlflush
+    sqlmigrate
+    sqlsequencereset
+    squashmigrations
+    startapp
+    startproject
+    test
+    testserver
+Note that only Django core commands are listed as settings are not properly configured (error: Requested setting INSTALLED_APPS, but settings are not configured. You must either define the environment variable DJANGO_SETTINGS_MODULE or call settings.configure() before accessing settings.).
+➜  blog_django django-admin help makemigrations
+usage: django-admin makemigrations [-h] [--version] [-v {0,1,2,3}]
+                                   [--settings SETTINGS]
+                                   [--pythonpath PYTHONPATH] [--traceback]
+                                   [--no-color] [--dry-run] [--merge]
+                                   [--empty] [--noinput] [-n NAME] [-e]
+                                   [--check]
+                                   [app_label [app_label ...]]
+
+Creates new migration(s) for apps.
+
+positional arguments:
+  app_label             Specify the app label(s) to create migrations for.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  -v {0,1,2,3}, --verbosity {0,1,2,3}
+                        Verbosity level; 0=minimal output, 1=normal output,
+                        2=verbose output, 3=very verbose output
+  --settings SETTINGS   The Python path to a settings module, e.g.
+                        "myproject.settings.main". If this isn't provided, the
+                        DJANGO_SETTINGS_MODULE environment variable will be
+                        used.
+  --pythonpath PYTHONPATH
+                        A directory to add to the Python path, e.g.
+                        "/home/djangoprojects/myproject".
+  --traceback           Raise on CommandError exceptions
+  --no-color            Don't colorize the command output.
+  --dry-run             Just show what migrations would be made; don't
+                        actually write them.
+  --merge               Enable fixing of migration conflicts.
+  --empty               Create an empty migration.
+  --noinput, --no-input
+                        Tells Django to NOT prompt the user for input of any
+                        kind.
+  -n NAME, --name NAME  Use this name for migration file(s).
+  -e, --exit            Exit with error code 1 if no changes needing
+                        migrations are found. Deprecated, use the --check
+                        option instead.
+  --check               Exit with a non-zero status if model changes are
+                        missing migrations.
+➜  blog_django django-admin help dumpdata
+usage: django-admin dumpdata [-h] [--version] [-v {0,1,2,3}]
+                             [--settings SETTINGS] [--pythonpath PYTHONPATH]
+                             [--traceback] [--no-color] [--format FORMAT]
+                             [--indent INDENT] [--database DATABASE]
+                             [-e EXCLUDE] [--natural-foreign]
+                             [--natural-primary] [-a] [--pks PRIMARY_KEYS]
+                             [-o OUTPUT]
+                             [app_label[.ModelName] [app_label[.ModelName]
+                             ...]]
+
+Output the contents of the database as a fixture of the given format (using
+each model's default manager unless --all is specified).
+
+positional arguments:
+  app_label[.ModelName]
+                        Restricts dumped data to the specified app_label or
+                        app_label.ModelName.
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+  -v {0,1,2,3}, --verbosity {0,1,2,3}
+                        Verbosity level; 0=minimal output, 1=normal output,
+                        2=verbose output, 3=very verbose output
+  --settings SETTINGS   The Python path to a settings module, e.g.
+                        "myproject.settings.main". If this isn't provided, the
+                        DJANGO_SETTINGS_MODULE environment variable will be
+                        used.
+  --pythonpath PYTHONPATH
+                        A directory to add to the Python path, e.g.
+                        "/home/djangoprojects/myproject".
+  --traceback           Raise on CommandError exceptions
+  --no-color            Don't colorize the command output.
+  --format FORMAT       Specifies the output serialization format for
+                        fixtures.
+  --indent INDENT       Specifies the indent level to use when pretty-printing
+                        output.
+  --database DATABASE   Nominates a specific database to dump fixtures from.
+                        Defaults to the "default" database.
+  -e EXCLUDE, --exclude EXCLUDE
+                        An app_label or app_label.ModelName to exclude (use
+                        multiple --exclude to exclude multiple apps/models).
+  --natural-foreign     Use natural foreign keys if they are available.
+  --natural-primary     Use natural primary keys if they are available.
+  -a, --all             Use Django's base manager to dump all models stored in
+                        the database, including those that would otherwise be
+                        filtered or modified by a custom manager.
+  --pks PRIMARY_KEYS    Only dump objects with given primary keys. Accepts a
+                        comma-separated list of keys. This option only works
+                        when you specify one model.
+  -o OUTPUT, --output OUTPUT
+                        Specifies file to which the output is written.
+➜  blog_django python manage.py makemigrations
+No changes detected
+➜  blog_django python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 22, in <module>
+    execute_from_command_line(sys.argv)
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/django/core/management/__init__.py", line 367, in execute_from_command_line
+    utility.execute()
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/django/core/management/__init__.py", line 341, in execute
+    django.setup()
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/django/__init__.py", line 27, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/django/apps/registry.py", line 108, in populate
+    app_config.import_models(all_models)
+  File "/usr/local/anaconda3/lib/python3.6/site-packages/django/apps/config.py", line 199, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/usr/local/anaconda3/lib/python3.6/importlib/__init__.py", line 126, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 994, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 971, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 955, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 665, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 678, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/Users/songhao/Desktop/blog_django/blog/models.py", line 6, in <module>
+    class BlogArticle(models.Model):
+  File "/Users/songhao/Desktop/blog_django/blog/models.py", line 15, in BlogArticle
+    class Meta:
+  File "/Users/songhao/Desktop/blog_django/blog/models.py", line 17, in Meta
+    ordering = (-'publish',)
+TypeError: bad operand type for unary -: 'str'
+➜  blog_django python manage.py makemigrations
+Migrations for 'blog':
+  blog/migrations/0001_initial.py:
+    - Create model BlogArticle
+➜  blog_django python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, blog, contenttypes, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying blog.0001_initial... OK
+  Applying sessions.0001_initial... OK
+➜  blog_django cat blog/migrations/0001_initial.py
+# -*- coding: utf-8 -*-
+# Generated by Django 1.10.6 on 2018-03-28 08:44
+from __future__ import unicode_literals
+
+from django.conf import settings
+from django.db import migrations, models
+import django.db.models.deletion
+import django.utils.timezone
+
+
+class Migration(migrations.Migration):
+
+    initial = True
+
+    dependencies = [
+        migrations.swappable_dependency(settings.AUTH_USER_MODEL),
+    ]
+
+    operations = [
+        migrations.CreateModel(
+            name='BlogArticle',
+            fields=[
+                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('title', models.CharField(max_length=100)),
+                ('body', models.TextField()),
+                ('publish', models.DateTimeField(default=django.utils.timezone.now)),
+                ('author', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='blog_posts', to=settings.AUTH_USER_MODEL)),
+            ],
+            options={
+                'ordering': ('-publish',),
+            },
+        ),
+    ]
+➜  blog_django python manage.py sqlmigrate 001
+usage: manage.py sqlmigrate [-h] [--version] [-v {0,1,2,3}]
+                            [--settings SETTINGS] [--pythonpath PYTHONPATH]
+                            [--traceback] [--no-color] [--database DATABASE]
+                            [--backwards]
+                            app_label migration_name
+manage.py sqlmigrate: error: the following arguments are required: migration_name
+➜  blog_django python manage.py sqlmigrate 0001
+usage: manage.py sqlmigrate [-h] [--version] [-v {0,1,2,3}]
+                            [--settings SETTINGS] [--pythonpath PYTHONPATH]
+                            [--traceback] [--no-color] [--database DATABASE]
+                            [--backwards]
+                            app_label migration_name
+manage.py sqlmigrate: error: the following arguments are required: migration_name
+➜  blog_django python manage.py sqlmigrate blog 0001
+BEGIN;
+--
+-- Create model BlogArticle
+--
+CREATE TABLE "blog_blogarticle" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "title" varchar(100) NOT NULL, "body" text NOT NULL, "publish" datetime NOT NULL, "author_id" integer NOT NULL REFERENCES "auth_user" ("id"));
+CREATE INDEX "blog_blogarticle_4f331e2f" ON "blog_blogarticle" ("author_id");
+COMMIT;
+➜  blog_django python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, blog, contenttypes, sessions
+Running migrations:
+  No migrations to apply.
+➜  blog_django open ./
+➜  blog_django python manage.py createsuperuser
+Username (leave blank to use 'songhao'): songhao
+Email address:
+Password:
+Password (again):
+Superuser created successfully.
+➜  blog_django python manage.py shell
+Python 3.6.4 |Anaconda custom (64-bit)| (default, Mar 12 2018, 20:05:31)
+Type 'copyright', 'credits' or 'license' for more information
+IPython 6.2.1 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: from django.contrib.auth.models import User
+
+In [2]: from blog.models import BlogArticle
+
+In [3]: user = User.objects.get(username='admin')
+---------------------------------------------------------------------------
+DoesNotExist                              Traceback (most recent call last)
+<ipython-input-3-786851a44d27> in <module>()
+----> 1 user = User.objects.get(username='admin')
+
+/usr/local/anaconda3/lib/python3.6/site-packages/django/db/models/manager.py in manager_method(self, *args, **kwargs)
+     83         def create_method(name, method):
+     84             def manager_method(self, *args, **kwargs):
+---> 85                 return getattr(self.get_queryset(), name)(*args, **kwargs)
+     86             manager_method.__name__ = method.__name__
+     87             manager_method.__doc__ = method.__doc__
+
+/usr/local/anaconda3/lib/python3.6/site-packages/django/db/models/query.py in get(self, *args, **kwargs)
+    383             raise self.model.DoesNotExist(
+    384                 "%s matching query does not exist." %
+--> 385                 self.model._meta.object_name
+    386             )
+    387         raise self.model.MultipleObjectsReturned(
+
+DoesNotExist: User matching query does not exist.
+
+In [4]: user = User.objects.get(username='songhao')
+
+In [5]: user
+Out[5]: <User: songhao>
+
+In [6]: user.name
+---------------------------------------------------------------------------
+AttributeError                            Traceback (most recent call last)
+<ipython-input-6-87d66da9d4e9> in <module>()
+----> 1 user.name
+
+AttributeError: 'User' object has no attribute 'name'
+
+In [7]: user.username
+Out[7]: 'songhao'
+
+In [8]: user.id
+Out[8]: 1
+
+In [9]: user.last_login
+Out[9]: datetime.datetime(2018, 3, 28, 8, 53, 8, 857583, tzinfo=<UTC>)
+
+In [10]: blogs = BlogArticle.objects.all()
+
+In [11]: blogs
+Out[11]: <QuerySet [<BlogArticle: 歌曲歌词>, <BlogArticle: 创作背景>]>
+
+In [12]: article = BlogArticle.objects.get(id=1)
+
+In [13]: article.title
+Out[13]: '创作背景'
+
+In [14]: article.body
+Out[14]: '生日礼物》是描写一个少年为心爱的女友挑选生日礼物，\r\n江涛《等到花没开》专辑\r\n江涛《等到花没开》专辑\r\n但当把礼物拿到女友面前的时候，女友却劝他把礼物留给更适合他的女人。整首歌画面感非常强，许多听过这首歌的人都表示说有过相类似的生活经历，很容易产生共鸣。我和我爱人在交往的过程中也是经常的吵吵闹闹，分分合合，这首歌里也有江涛那时候的一些影子'
+
+In [15]: article.author
+Out[15]: <User: songhao>
+
+In [16]: article.author.username
+Out[16]: 'songhao'
+
+In [17]: user.blog_posts
+Out[17]: <django.db.models.fields.related_descriptors.create_reverse_many_to_one_manager.<locals>.RelatedManager at 0x10620ac18>
+
+In [18]: user.blog_posts()
+---------------------------------------------------------------------------
+KeyError                                  Traceback (most recent call last)
+<ipython-input-18-ca521d9ffa60> in <module>()
+----> 1 user.blog_posts()
+
+/usr/local/anaconda3/lib/python3.6/site-packages/django/db/models/fields/related_descriptors.py in __call__(self, **kwargs)
+    522             # We use **kwargs rather than a kwarg argument to enforce the
+    523             # `manager='manager_name'` syntax.
+--> 524             manager = getattr(self.model, kwargs.pop('manager'))
+    525             manager_class = create_reverse_many_to_one_manager(manager.__class__, rel)
+    526             return manager_class(self.instance)
+
+KeyError: 'manager'
+
+In [19]: user.blog_posts[1]
+---------------------------------------------------------------------------
+TypeError                                 Traceback (most recent call last)
+<ipython-input-19-5ac9f090865c> in <module>()
+----> 1 user.blog_posts[1]
+
+TypeError: 'RelatedManager' object does not support indexing
+
+In [20]: article.publish
+Out[20]: datetime.datetime(2018, 3, 28, 8, 56, tzinfo=<UTC>)
+
+In [21]: exit
+➜  blog_django ls
+blog       db.sqlite3 manage.py  mysite
+➜  blog_django
